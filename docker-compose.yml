@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./vpn-backend
+    container_name: wireguard-backend
+    ports:
+      - "3001:4000"
+    networks:
+      - wgnet
+
+  frontend:
+    build:
+      context: ./wg-client-generator
+    container_name: wireguard-frontend
+    ports:
+      - "3000:80"
+    environment:
+      - REACT_APP_BACKEND_URL=http://wireguard-backend:4000
+    networks:
+      - wgnet
+    depends_on:
+      - backend
+
+networks:
+  wgnet:
+    driver: bridge
+
