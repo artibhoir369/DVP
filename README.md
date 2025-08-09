@@ -1,2 +1,0 @@
-# DVP
-Digitalocean-VPN-Project
