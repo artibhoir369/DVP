@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = 3001;
+const PORT = 4000;
 
 async function generateWireGuardKeyPair() {
   await sodium.ready;
@@ -18,7 +18,7 @@ async function generateWireGuardKeyPair() {
   return { privateKey, publicKey };
 }
 
-app.get('/generate-keys', async (req, res) => {
+app.get('/api/generate-keys', async (req, res) => {
   try {
     const keys = await generateWireGuardKeyPair();
     res.json(keys);
@@ -28,7 +28,7 @@ app.get('/generate-keys', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`VPN Backend running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`VPN Backend running on http://0.0.0.0:${PORT}`);
 });
 
