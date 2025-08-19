@@ -12,32 +12,32 @@ function App() {
     blr1: {
       label: '🌏 blr1 - Bangalore, India (Best for India/UAE)',
       publicKey: '22QjOlWhPKvY587dQWoDni7KMh7S9RONnHL4fzICM28=',
-      endpoint: 'avs.skyboundcyber.com:51820'
+      endpoint: 'blr.skyboundcyber.com:51820'
     },
     tor1: {
       label: '🍁 tor1 - Toronto, Canada',
       publicKey: 'REPLACE_WITH_TOR1_PUBLIC_KEY',
-      endpoint: 'tor1.example.com:51820'
+      endpoint: 'tor.skyboundcyber.com:51820'
     },
     nyc3: {
       label: '🗽 nyc3 - New York, USA',
       publicKey: 'REPLACE_WITH_NYC3_PUBLIC_KEY',
-      endpoint: 'nyc3.example.com:51820'
+      endpoint: 'nyc.skyboundcyber.com:51820'
     },
     sfo3: {
       label: '🌉 sfo3 - San Francisco, USA',
       publicKey: 'REPLACE_WITH_SFO3_PUBLIC_KEY',
-      endpoint: 'sfo3.example.com:51820'
+      endpoint: 'sfo.skyboundcyber.com:51820'
     },
     lon1: {
       label: '🇬🇧 lon1 - London, UK',
       publicKey: 'REPLACE_WITH_LON1_PUBLIC_KEY',
-      endpoint: 'lon1.example.com:51820'
+      endpoint: 'lon.skyboundcyber.com:51820'
     },
     fra1: {
       label: '🇩🇪 fra1 - Frankfurt, Germany',
       publicKey: 'REPLACE_WITH_FRA1_PUBLIC_KEY',
-      endpoint: 'fra1.example.com:51820'
+      endpoint: 'fra.skyboundcyber.com:51820'
     }
   };
 
