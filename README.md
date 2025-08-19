@@ -77,7 +77,7 @@ http://143.198.14.17
 ## 📬 Contact & Support
 
 For help or new configurations, contact:  
-📧 **admin@[yourdomain].com**  
+📧 **+91 90537 61515**  
 🔧 Or access the support page via the web UI
 
 ---
