@@ -23,15 +23,10 @@ https://avs.skyboundcyber.com
 - Download the `.conf` file
 - View or scan the QR code for mobile setup
 
-  ## 🌍 Select VPN Server based on location
+## 🌍 Select VPN Server based on location
 
-### 🇮🇳 Bangalore, India (`blr1`) – Best for India/UAE users
+   #### 🇮🇳 Bangalore, India (`blr1`) – Best for India/UAE users
 
-- 🔐 **Public Key**:  
-  `22QjOlWhPKvY587dQWoDni7KMh7S9RONnHL4fzICM28=`
-
-- 📡 **Endpoint**:  
-  `blr.skyboundcyber.com:51820`
 
 ---
 
@@ -40,25 +35,16 @@ https://avs.skyboundcyber.com
 The UI will generate a unique configuration per client. A sample client configuration looks like this:
 
 ```ini
-[Interface]
-PrivateKey = E3BTjyY8JNDy4dSf3O4JDy+7H4Ovd7dRaZCOxWc3oPE=
-Address = 10.0.0.161/32
-DNS = 1.1.1.1
 
-[Peer]
-PublicKey = 22QjOlWhPKvY587dQWoDni7KMh7S9RONnHL4fzICM28=
-Endpoint = blr.skyboundcyber.com:51820
-AllowedIPs = 0.0.0.0/0, ::/0
-PersistentKeepalive = 25
 ```
 ⚠️ Each configuration is unique per device. Do not reuse across multiple clients.
 
 ---
 
-## share this to whitelist 
+## Share Server Command with Admin to whitelist IP
 ## 💻 Server Command
 ```ini
-sudo wg set wg0 peer NraWF6Jfd7HVm2GgaII/28IiorVPIvDZ+RuYINMeURQ= allowed-ips 10.0.0.163/32
+
 ```
 
 
@@ -98,21 +84,10 @@ sudo wg set wg0 peer NraWF6Jfd7HVm2GgaII/28IiorVPIvDZ+RuYINMeURQ= allowed-ips 10
 
 ---
 
-## 🧩 Troubleshooting
-
-| Issue                                       | Solution                                                    |
-|---------------------------------------------|-------------------------------------------------------------|
-| Cannot access https://avs.skyboundcyber.com | Ensure server is online and port is not blocked by firewall |
-| Config doesn’t work                         | Verify the config matches the server’s settings             |
-| Mobile QR scan fails                        | Refresh the page or zoom in on the QR code                  |
-| Tunnel doesn’t connect                      | Check your internet, firewall, and DNS settings             |
-
----
 
 ## 📬 Contact & Support
 
 For help or new configurations, contact:  
 📧 **+91 90537 61515**  
-🔧 Or access the support page via the web UI
 
 ---
