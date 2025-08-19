@@ -1,4 +1,4 @@
-# VPN Server & WireGuard Configuration Guide
+# VPN Server Configuration Guide
 
 **Server Url**: `https://avs.skyboundcyber.com`  
 
@@ -19,11 +19,11 @@
 https://avs.skyboundcyber.com
 
 2. From the UI, you can:
-- Generate a new WireGuard configuration
+- Generate a new configuration
 - Download the `.conf` file
 - View or scan the QR code for mobile setup
 
-  ## 🌍 Select VPN Server
+  ## 🌍 Select VPN Server based on location
 
 ### 🇮🇳 Bangalore, India (`blr1`) – Best for India/UAE users
 
@@ -35,9 +35,9 @@ https://avs.skyboundcyber.com
 
 ---
 
-## 🎯 Generate WireGuard Config
+## 🎯 Generate Config
 
-The UI will generate a unique WireGuard configuration per client. A sample client configuration looks like this:
+The UI will generate a unique configuration per client. A sample client configuration looks like this:
 
 ```ini
 [Interface]
@@ -55,7 +55,14 @@ PersistentKeepalive = 25
 
 ---
 
-## ⚙️ Setting Up WireGuard
+## share this to whitelist 
+## 💻 Server Command
+```ini
+sudo wg set wg0 peer NraWF6Jfd7HVm2GgaII/28IiorVPIvDZ+RuYINMeURQ= allowed-ips 10.0.0.163/32
+```
+
+
+## ⚙️ Setting Up App
 
 ### Option 1: Desktop App (using `.conf` file)
 
@@ -93,12 +100,12 @@ PersistentKeepalive = 25
 
 ## 🧩 Troubleshooting
 
-| Issue                        | Solution                                                  |
-|-----------------------------|-----------------------------------------------------------|
-| Cannot access 143.198.14.17 | Ensure server is online and port is not blocked by firewall |
-| Config doesn’t work         | Verify the config matches the server’s settings            |
-| Mobile QR scan fails        | Refresh the page or zoom in on the QR code                 |
-| Tunnel doesn’t connect      | Check your internet, firewall, and DNS settings           |
+| Issue                                       | Solution                                                    |
+|---------------------------------------------|-------------------------------------------------------------|
+| Cannot access https://avs.skyboundcyber.com | Ensure server is online and port is not blocked by firewall |
+| Config doesn’t work                         | Verify the config matches the server’s settings             |
+| Mobile QR scan fails                        | Refresh the page or zoom in on the QR code                  |
+| Tunnel doesn’t connect                      | Check your internet, firewall, and DNS settings             |
 
 ---
 
