@@ -1,8 +1,6 @@
 # VPN Server & WireGuard Configuration Guide
 
-**Server IP**: `143.198.14.17`  
-**VPN Type**: WireGuard  
-**Purpose**: Secure remote access via VPN
+**Server Url**: `https://avs.skyboundcyber.com`  
 
 ---
 
@@ -18,12 +16,42 @@
 ## 🖥 Accessing the VPN Configuration UI
 
 1. Open your browser and go to:
-http://143.198.14.17
+https://avs.skyboundcyber.com
 
 2. From the UI, you can:
 - Generate a new WireGuard configuration
 - Download the `.conf` file
 - View or scan the QR code for mobile setup
+
+  ## 🌍 Select VPN Server
+
+### 🇮🇳 Bangalore, India (`blr1`) – Best for India/UAE users
+
+- 🔐 **Public Key**:  
+  `22QjOlWhPKvY587dQWoDni7KMh7S9RONnHL4fzICM28=`
+
+- 📡 **Endpoint**:  
+  `blr.skyboundcyber.com:51820`
+
+---
+
+## 🎯 Generate WireGuard Config
+
+The UI will generate a unique WireGuard configuration per client. A sample client configuration looks like this:
+
+```ini
+[Interface]
+PrivateKey = E3BTjyY8JNDy4dSf3O4JDy+7H4Ovd7dRaZCOxWc3oPE=
+Address = 10.0.0.161/32
+DNS = 1.1.1.1
+
+[Peer]
+PublicKey = 22QjOlWhPKvY587dQWoDni7KMh7S9RONnHL4fzICM28=
+Endpoint = blr.skyboundcyber.com:51820
+AllowedIPs = 0.0.0.0/0, ::/0
+PersistentKeepalive = 25
+```
+⚠️ Each configuration is unique per device. Do not reuse across multiple clients.
 
 ---
 
